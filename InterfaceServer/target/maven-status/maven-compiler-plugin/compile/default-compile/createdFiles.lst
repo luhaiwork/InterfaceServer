@@ -1,0 +1,6 @@
+com\template\rest\PaymentService.class
+com\template\dao\UserDAO.class
+com\template\dao\impl\UserDAOImpl.class
+com\template\bean\User.class
+com\template\transaction\TransactionBo.class
+com\template\transaction\impl\TransactionBoImpl.class
