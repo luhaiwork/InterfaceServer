@@ -17,8 +17,7 @@ import com.template.transaction.TransactionBo;
 @Component
 @Path("/payment")
 public class PaymentService {
-	@Autowired
-	UserDAO userDao;
+
 	@Autowired
 	TransactionBo transactionBo;
  
@@ -27,11 +26,11 @@ public class PaymentService {
 	public Response savePayment() {
  
 		String result = transactionBo.save();
-		User queryUserById = userDao.queryUserById(1);
+//		User queryUserById = userDao.queryUserById(1);
 //		JSONObject jsonObj = new JSONObject();
 //		jsonObj.put("my_key", "value");
 //		result=jsonObj.toJSONString();
-		return Response.status(200).entity(result+"---------"+queryUserById.getUsername()).build();
+		return Response.status(200).entity(result+"---------"+result).build();
 	}
 	@GET
 	@Path("/getJsonTest")
